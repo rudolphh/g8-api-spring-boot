@@ -24,6 +24,11 @@ public class ArticleDaoImpl implements ArticleDao{
     }
 
     @Override
+    public List<Article> getArticlesByCategory(String category) {
+        return articleRepository.findArticlesByCategory(category);
+    }
+
+    @Override
     public Article addArticle(Article article) {
         return articleRepository.insert(article);
     }

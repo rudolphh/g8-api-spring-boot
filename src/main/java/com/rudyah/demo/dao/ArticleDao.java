@@ -6,6 +6,7 @@ import java.util.List;
 
 public interface ArticleDao {
     List<Article> getAllArticles();
+    List<Article> getArticlesByCategory(String category);
     Article getArticleById(String id);
     Article getArticleByTitle(String title);
     Article addArticle(Article Article);

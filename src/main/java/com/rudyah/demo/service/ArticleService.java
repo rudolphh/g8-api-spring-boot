@@ -21,6 +21,10 @@ public class ArticleService {
         return articleDao.getAllArticles();
     }
 
+    public List<Article> getArticlesByCategory(String category){
+        return articleDao.getArticlesByCategory(category);
+    }
+
     public Article getArticle(String id){
         return articleDao.getArticleById(id);
     }
